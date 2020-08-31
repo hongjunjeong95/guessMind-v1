@@ -1,3 +1,5 @@
+import { initSockets } from './sockets';
+
 const body = document.querySelector('body');
 const loginForm = document.getElementById('jsLogin');
 const NICKNAME = 'nickname';
@@ -13,8 +15,10 @@ if (nickname === null) {
 }
 
 const logIn = (nickname) => {
-  window.socket = io('/');
-  window.socket.emit(window.events.setNickname, { nickname });
+  // window.로 해줌으로써 socket을 어디서든지 사용할 수가 있다.
+  const socket = io('/');
+  socket.emit(window.events.setNickname, { nickname });
+  initSockets(socket);
 };
 
 const handleFormSubmit = (e) => {
