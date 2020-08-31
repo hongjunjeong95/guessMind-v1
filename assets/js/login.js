@@ -13,8 +13,8 @@ if (nickname === null) {
 }
 
 const logIn = (nickname) => {
-  const socket = io('/');
-  socket.emit('setNickname', { nickname });
+  window.socket = io('/');
+  window.socket.emit(window.events.setNickname, { nickname });
 };
 
 const handleFormSubmit = (e) => {
