@@ -2,17 +2,12 @@ import { initSockets } from './sockets';
 
 const body = document.querySelector('body');
 const loginForm = document.getElementById('jsLogin');
+
 const NICKNAME = 'nickname';
 const LOGGED_OUT = 'loggedOut';
 const LOGGED_IN = 'loggedIn';
 
 const nickname = localStorage.getItem(NICKNAME);
-
-if (nickname === null) {
-  body.className = LOGGED_OUT;
-} else {
-  body.className = LOGGED_IN;
-}
 
 const logIn = (nickname) => {
   // window.로 해줌으로써 socket을 어디서든지 사용할 수가 있다.
@@ -20,6 +15,13 @@ const logIn = (nickname) => {
   socket.emit(window.events.setNickname, { nickname });
   initSockets(socket);
 };
+
+if (nickname === null) {
+  body.className = LOGGED_OUT;
+} else {
+  body.className = LOGGED_IN;
+  logIn(nickname);
+}
 
 const handleFormSubmit = (e) => {
   e.preventDefault();
