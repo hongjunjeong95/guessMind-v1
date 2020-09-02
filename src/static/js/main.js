@@ -50,7 +50,7 @@ require("./login");
 require("./chat");
 
 require("./paint");
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZha2VfOWMyYmM1YzQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFDQTs7QUFDQTs7QUFDQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9zb2NrZXRzJztcbmltcG9ydCAnLi9sb2dpbic7XG5pbXBvcnQgJy4vY2hhdCc7XG5pbXBvcnQgJy4vcGFpbnQnO1xuIl19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZha2VfZTY2ZmM2OS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBOztBQUNBOztBQUNBOztBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuL3NvY2tldHMnO1xuaW1wb3J0ICcuL2xvZ2luJztcbmltcG9ydCAnLi9jaGF0JztcbmltcG9ydCAnLi9wYWludCc7XG4iXX0=
 },{"./chat":1,"./login":3,"./paint":5,"./sockets":6}],3:[function(require,module,exports){
 "use strict";
 
